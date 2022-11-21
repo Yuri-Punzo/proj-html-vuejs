@@ -21,11 +21,5 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-h1 {
-  font-size: 88px;
-}
 
-p {
-  font-size: 15px;
-}
 </style>
