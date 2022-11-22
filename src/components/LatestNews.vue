@@ -55,7 +55,7 @@ export default {
                 {
                     image: "featured_article_1_bg.jpg",
                     title: "Featured Article- Blah blah blah",
-                    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nam sapiente mollitia ut dignissimos dicta, earum saepe animi deleniti aspernatur incidunt?",
+                    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nam sapiente mollitia ut dignissimos dicta, earum saepe animi deleniti aspernatur incidunt ? Nulla nam sapiente mollitia ut dignissimos dicta.",
                     date: "October 11th, 2022",
                     comments: "Comments Off",
                     featured: true
@@ -84,7 +84,7 @@ export default {
                 <div class="col all_articles" v-for="article in articlesList.slice(0, 3)"
                     v-show="article.featured === false">
                     <img :src="`src/assets/img/${article.image}`" alt="">
-                    <h5>{{ article.title }}</h5>
+                    <h3>{{ article.title }}</h3>
                     <p>{{ article.date }} | {{ article.comments }}</p>
                     <p>{{ article.text }}</p>
                 </div>
@@ -94,9 +94,15 @@ export default {
                 <img class="featured_image" v-show="article.featured === true" :src="`src/assets/img/${article.image}`"
                     alt="">
                 <div class="featured_info">
-                    <h5 v-show="article.featured === true">{{ article.title }}</h5>
-                    <p v-show="article.featured === true">{{ article.date }} | {{ article.comments }}</p>
-                    <p v-show="article.featured === true">{{ article.text }}</p>
+                    <div class="my_container">
+                        <h5>FEATURED ARTICLE</h5>
+                        <h3 v-show="article.featured === true">{{ article.title }}</h3>
+                        <p v-show="article.featured === true">{{ article.text }}</p>
+                        <span class="read_more_btn">
+                            READ MORE
+                            <font-awesome-icon class="chevron_right" icon="fa-solid fa-chevron-right" />
+                        </span>
+                    </div>
                 </div>
             </div>
             <!-- /featured article -->
@@ -104,7 +110,7 @@ export default {
                 <div class="col all_articles" v-for="article in articlesList.slice(3)"
                     v-show="article.featured === false">
                     <img :src="`src/assets/img/${article.image}`" alt="">
-                    <h5>{{ article.title }}</h5>
+                    <h3>{{ article.title }}</h3>
                     <p>{{ article.date }} | {{ article.comments }}</p>
                     <p>{{ article.text }}</p>
                 </div>
@@ -143,14 +149,25 @@ export default {
 .all_articles {
     margin-top: 50px;
 
+    h3 {
+        font-weight: bold;
+        font-size: 24px;
+        margin-top: 16px;
+    }
+
     img {
         max-width: 100%;
+    }
+
+    p {
+        color: #808080;
     }
 }
 
 .featured_article {
     margin-top: 50px;
     margin-bottom: 40px;
+    color: white;
 
     .featured_image {
         max-width: 100%;
@@ -158,8 +175,48 @@ export default {
 
     .featured_info {
         position: absolute;
-        top: 1px;
-        left: 1px;
+        top: 290px;
+        left: 110px;
+
+        .my_container {
+            width: 95%;
+
+            h3 {
+                font-weight: bold;
+                font-size: 48px;
+                margin-bottom: 24px;
+            }
+
+            .read_more_btn {
+                display: inline-block;
+                padding: 10px 36px;
+                margin-top: 16px;
+                background-color: black;
+                color: white;
+                border-radius: 2px;
+                font-weight: bold;
+                font-size: 24px;
+                transition: 0.3s;
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: white;
+                    color: black;
+                    box-shadow: 0 0 0 3px white, inset 0 0 0 2px black;
+                }
+
+                .chevron_right {
+                    font-size: 21px;
+                }
+            }
+        }
+    }
+
+    h5 {
+        font-weight: bold;
+        font-size: 20px;
+        padding-bottom: 12px;
+        letter-spacing: 4px;
     }
 }
 </style>
