@@ -70,7 +70,7 @@ export default {
     img {
         max-width: 100%;
         height: 80px;
-        padding: 1rem;
+        padding: 1rem 1rem 1rem 0;
     }
 }
 
