@@ -1,12 +1,14 @@
 <script>
 import LatestNews from "./LatestNews.vue"
 import TutorialsAndGuides from "./TutorialsAndGuides.vue"
+import ForumSections from "./ForumSections.vue"
 
 export default {
     name: "SiteMain",
     components: {
         LatestNews,
-        TutorialsAndGuides
+        TutorialsAndGuides,
+        ForumSections
     }
 }
 </script>
@@ -52,7 +54,7 @@ export default {
             </h5>
         </div>
         <!-- /read our blog -->
-        <!-- <ForumSections /> -->
+        <ForumSections />
         <!-- /Forum Sections -->
         <div class="blog_and_forum text-center">
             <h5>
@@ -144,6 +146,7 @@ export default {
         font-weight: bold;
         font-size: 12px;
         padding: 40px;
+        margin-bottom: 0 !important;
     }
 
 }

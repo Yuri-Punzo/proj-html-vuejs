@@ -90,5 +90,43 @@ export const store = reactive({
             tutorial_guide: false,
             reviewed_product: true
         }
+    ],
+    forumSections: [
+        {
+            title: "News & Community",
+            icon_path: "fa-solid fa-file-lines"
+        },
+        {
+            title: "Apple Forum",
+            icon_path: "fa-brands fa-apple"
+        },
+        {
+            title: "Microsoft Forum",
+            icon_path: "fa-brands fa-windows"
+        },
+        {
+            title: "Android Forum",
+            icon_path: "fa-brands fa-android"
+        },
+        {
+            title: "General Discussion",
+            icon_path: "fa-solid fa-mug-saucer"
+        },
+        {
+            title: "App & Software",
+            icon_path: "fa-solid fa-cubes"
+        },
+        {
+            title: "Gadgets & Stuff",
+            icon_path: "fa-solid fa-laptop"
+        },
+        {
+            title: "Tutorials & Guides",
+            icon_path: "fa-solid fa-wrench"
+        },
+
     ]
 })
+/* 
+<font-awesome-icon icon="{{icon_path}}" />
+ */

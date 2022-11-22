@@ -86,7 +86,7 @@ export default {
     }
 
     .orange_br {
-        width: 52px;
+        width: 85px;
         margin: auto;
         border-bottom: 2px solid #ff8d61;
     }
