@@ -1,6 +1,10 @@
 <script>
+import LatestNews from "./LatestNews.vue"
 export default {
-    name: "SiteMain"
+    name: "SiteMain",
+    components: {
+        LatestNews
+    }
 }
 </script>
 
@@ -33,7 +37,7 @@ export default {
         <!-- /info -->
         <LatestNews />
         <!-- /Latest News -->
-        <TutorialsAndGuides />
+        <!-- <TutorialsAndGuides /> -->
         <!-- /Tutorials And Guides -->
         <div class="blog_and_forum text-center">
             <h5>
@@ -42,7 +46,7 @@ export default {
             </h5>
         </div>
         <!-- /read our blog -->
-        <ForumSections />
+        <!-- <ForumSections /> -->
         <!-- /Forum Sections -->
         <div class="blog_and_forum text-center">
             <h5>
