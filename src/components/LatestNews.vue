@@ -25,38 +25,42 @@ export default {
             </div>
             <!-- /latest_news_header -->
             <div class="row">
-                <div class="col all_articles" v-for="article in store.articlesList.slice(0, 3)"
-                    v-show="article.featured === false">
-                    <img :src="`src/assets/img/${article.image}`" alt="">
-                    <h3>{{ article.title }}</h3>
-                    <p>{{ article.date }} | {{ article.comments }}</p>
-                    <p>{{ article.text }}</p>
+                <div class="col all_articles" v-for="article in store.articlesList.slice(0, 3)">
+                    <div v-show="article.featured === false">
+                        <img :src="`src/assets/img/${article.image}`" alt="">
+                        <h3>{{ article.title }}</h3>
+                        <p>{{ article.date }} | {{ article.comments }}</p>
+                        <p>{{ article.text }}</p>
+                    </div>
                 </div>
             </div>
             <!-- /first 3 articles -->
             <div class="featured_article position-relative" v-for="article in store.articlesList">
-                <img class="featured_image" v-show="article.featured === true" :src="`src/assets/img/${article.image}`"
-                    alt="">
-                <div class="featured_info">
-                    <div class="my_container">
-                        <h5>FEATURED ARTICLE</h5>
-                        <h3 v-show="article.featured === true">{{ article.title }}</h3>
-                        <p v-show="article.featured === true">{{ article.text }}</p>
-                        <span class="read_more_btn">
-                            READ MORE
-                            <font-awesome-icon class="chevron_right" icon="fa-solid fa-chevron-right" />
-                        </span>
+                <div v-show="article.featured === true">
+                    <img class="featured_image" :src="`src/assets/img/${article.image}`" alt="">
+                    <div class="featured_info">
+                        <div class="my_container">
+                            <h5>FEATURED ARTICLE</h5>
+                            <h3>{{ article.title }}</h3>
+                            <p>{{ article.text }}</p>
+                            <span class="read_more_btn">
+                                READ MORE
+                                <font-awesome-icon class="chevron_right" icon="fa-solid fa-chevron-right" />
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
             <!-- /featured article -->
+            <div></div>
             <div class="row">
-                <div class="col all_articles" v-for="article in store.articlesList.slice(3)"
-                    v-show="article.featured === false">
-                    <img :src="`src/assets/img/${article.image}`" alt="">
-                    <h3>{{ article.title }}</h3>
-                    <p>{{ article.date }} | {{ article.comments }}</p>
-                    <p>{{ article.text }}</p>
+                <div class="col all_articles" v-for="article in store.articlesList.slice(3, 6)">
+                    <div v-show="article.featured === false">
+                        <img :src="`src/assets/img/${article.image}`" alt="">
+                        <h3>{{ article.title }}</h3>
+                        <p>{{ article.date }} | {{ article.comments }}</p>
+                        <p>{{ article.text }}</p>
+                    </div>
                 </div>
             </div>
             <!-- /last 3 articles -->

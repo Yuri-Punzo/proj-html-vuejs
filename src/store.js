@@ -4,11 +4,13 @@ export const store = reactive({
     articlesList: [
         {
             image: "post_feat_img_25-700x441.jpg",
+            image_sml: "",
             title: "Article 1 - Blah blah blah",
             text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nam sapiente mollitia ut dignissimos dicta, earum saepe animi deleniti aspernatur incidunt?",
             date: "October 11th, 2022",
             comments: "Comments Off",
-            featured: false
+            featured: false,
+            tutorial_guide: false
         },
         {
             image: "post_feat_img_24-700x441.jpg",
@@ -16,7 +18,8 @@ export const store = reactive({
             text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nam sapiente mollitia ut dignissimos dicta, earum saepe animi deleniti aspernatur incidunt?",
             date: "October 11th, 2022",
             comments: "Comments Off",
-            featured: false
+            featured: false,
+            tutorial_guide: false
         },
         {
             image: "post_feat_img_23-700x441.jpg",
@@ -24,7 +27,8 @@ export const store = reactive({
             text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nam sapiente mollitia ut dignissimos dicta, earum saepe animi deleniti aspernatur incidunt?",
             date: "October 11th, 2022",
             comments: "Comments Off",
-            featured: false
+            featured: false,
+            tutorial_guide: true
         },
         {
             image: "post_feat_img_22-700x441.jpg",
@@ -32,7 +36,8 @@ export const store = reactive({
             text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nam sapiente mollitia ut dignissimos dicta, earum saepe animi deleniti aspernatur incidunt?",
             date: "October 11th, 2022",
             comments: "Comments Off",
-            featured: false
+            featured: false,
+            tutorial_guide: true
         },
         {
             image: "post_feat_img_21-700x441.jpg",
@@ -40,7 +45,8 @@ export const store = reactive({
             text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nam sapiente mollitia ut dignissimos dicta, earum saepe animi deleniti aspernatur incidunt?",
             date: "October 11th, 2022",
             comments: "Comments Off",
-            featured: false
+            featured: false,
+            tutorial_guide: false
         },
         {
             image: "post_feat_img_20-700x441.jpg",
@@ -48,7 +54,8 @@ export const store = reactive({
             text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nam sapiente mollitia ut dignissimos dicta, earum saepe animi deleniti aspernatur incidunt?",
             date: "October 11th, 2022",
             comments: "Comments Off",
-            featured: false
+            featured: false,
+            tutorial_guide: true
         },
         {
             image: "featured_article_1_bg.jpg",
@@ -56,7 +63,8 @@ export const store = reactive({
             text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nam sapiente mollitia ut dignissimos dicta, earum saepe animi deleniti aspernatur incidunt ? Nulla nam sapiente mollitia ut dignissimos dicta.",
             date: "October 11th, 2022",
             comments: "Comments Off",
-            featured: true
+            featured: true,
+            tutorial_guide: false
         }
     ]
 })
