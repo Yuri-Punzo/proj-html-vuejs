@@ -127,6 +127,3 @@ export const store = reactive({
 
     ]
 })
-/* 
-<font-awesome-icon icon="{{icon_path}}" />
- */
