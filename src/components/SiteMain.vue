@@ -171,8 +171,8 @@ export default {
     height: 300px;
 
     h4 {
-        font-size: 20px;
-        font-weight: bold;
+        padding-top: 70px;
+        font-size: 24px;
     }
 }
 </style>
