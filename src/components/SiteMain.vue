@@ -74,49 +74,49 @@ export default {
     p {
         font-size: 15;
     }
-}
 
-.call_to_action {
-    display: inline-block;
-    border-radius: 2px;
-    font-size: 12;
-    font-weight: bold;
-    background-color: #26a9bd;
-    padding: 8px 12px;
-    transition: 0.3s;
-    margin-top: 1rem;
+    .call_to_action {
+        display: inline-block;
+        border-radius: 2px;
+        font-size: 12;
+        font-weight: bold;
+        background-color: #26a9bd;
+        padding: 8px 12px;
+        transition: 0.3s;
+        margin-top: 1rem;
 
-    &:hover {
-        cursor: pointer;
-        background-color: white;
-        color: #26a9bd;
-        box-shadow: 0 0 0 3px white, inset 0 0 0 2px #26a9bd;
+        &:hover {
+            cursor: pointer;
+            background-color: white;
+            color: #26a9bd;
+            box-shadow: 0 0 0 3px white, inset 0 0 0 2px #26a9bd;
+        }
+
+        .chevron_right {
+            font-size: 13px;
+        }
     }
-}
-
-.chevron_right {
-    font-size: 13px;
 }
 
 .info {
     background-color: #f2f2f2;
-}
 
-.my_container {
-    width: 45%;
-    padding: 70px 0;
+    .my_container {
+        width: 45%;
+        padding: 70px 0;
 
-    h5 {
-        font-weight: bold;
-        font-size: 12px;
-        color: #525252;
-        padding-bottom: 12px;
-        letter-spacing: 4px;
-    }
+        h5 {
+            font-weight: bold;
+            font-size: 12px;
+            color: #525252;
+            padding-bottom: 12px;
+            letter-spacing: 4px;
+        }
 
-    p {
-        font-size: 18px;
-        color: #898989;
+        p {
+            font-size: 18px;
+            color: #898989;
+        }
     }
 }
 
