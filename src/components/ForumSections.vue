@@ -72,6 +72,10 @@ export default {
         height: 285px;
         width: 285px;
         border-top: 3px solid #27afc3;
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 
     .my_icons {
