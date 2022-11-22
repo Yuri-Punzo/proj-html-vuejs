@@ -21,23 +21,26 @@ export default {
             </div>
         </div>
         <!-- /jumbotron -->
-        <div class="info d-flex justify-content-center">
-            <div class="my_container text-center">
-                <h5>
-                    AVADA FORUM IS THE PLACE TO BE
-                </h5>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem error dolorem, molestiae,
-                    maiores
-                    sequi adipisci voluptas assumenda cum laboriosam, perferendis dolor veniam! Omnis fugiat distinctio
-                    molestiae illo saepe itaque. Reiciendis.
-                </p>
+        <div class="info">
+            <div class="container d-flex justify-content-center">
+                <div class="my_container text-center">
+                    <h5>
+                        AVADA FORUM IS THE PLACE TO BE
+                    </h5>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem error dolorem, molestiae,
+                        maiores
+                        sequi adipisci voluptas assumenda cum laboriosam, perferendis dolor veniam! Omnis fugiat
+                        distinctio
+                        molestiae illo saepe itaque. Reiciendis.
+                    </p>
+                </div>
             </div>
         </div>
         <!-- /info -->
         <LatestNews />
         <!-- /Latest News -->
-        <!-- <TutorialsAndGuides /> -->
+        <TutorialsAndGuides />
         <!-- /Tutorials And Guides -->
         <div class="blog_and_forum text-center">
             <h5>
@@ -106,7 +109,7 @@ export default {
     background-color: #f2f2f2;
 
     .my_container {
-        width: 45%;
+        width: 65%;
         padding: 70px 0;
 
         h5 {

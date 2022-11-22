@@ -1,67 +1,11 @@
 <script>
+import { store } from "../store"
+
 export default {
     name: "LatestNews",
     data() {
         return {
-            articlesList: [
-                {
-                    image: "post_feat_img_25-700x441.jpg",
-                    title: "Article 1 - Blah blah blah",
-                    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nam sapiente mollitia ut dignissimos dicta, earum saepe animi deleniti aspernatur incidunt?",
-                    date: "October 11th, 2022",
-                    comments: "Comments Off",
-                    featured: false
-                },
-                {
-                    image: "post_feat_img_24-700x441.jpg",
-                    title: "Article 2 - Blah blah blah",
-                    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nam sapiente mollitia ut dignissimos dicta, earum saepe animi deleniti aspernatur incidunt?",
-                    date: "October 11th, 2022",
-                    comments: "Comments Off",
-                    featured: false
-                },
-                {
-                    image: "post_feat_img_23-700x441.jpg",
-                    title: "Article 3 - Blah blah blah",
-                    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nam sapiente mollitia ut dignissimos dicta, earum saepe animi deleniti aspernatur incidunt?",
-                    date: "October 11th, 2022",
-                    comments: "Comments Off",
-                    featured: false
-                },
-                {
-                    image: "post_feat_img_22-700x441.jpg",
-                    title: "Article 4 - Blah blah blah",
-                    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nam sapiente mollitia ut dignissimos dicta, earum saepe animi deleniti aspernatur incidunt?",
-                    date: "October 11th, 2022",
-                    comments: "Comments Off",
-                    featured: false
-                },
-                {
-                    image: "post_feat_img_21-700x441.jpg",
-                    title: "Article 5 - Blah blah blah",
-                    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nam sapiente mollitia ut dignissimos dicta, earum saepe animi deleniti aspernatur incidunt?",
-                    date: "October 11th, 2022",
-                    comments: "Comments Off",
-                    featured: false
-                },
-                {
-                    image: "post_feat_img_20-700x441.jpg",
-                    title: "Article 6 - Blah blah blah",
-                    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nam sapiente mollitia ut dignissimos dicta, earum saepe animi deleniti aspernatur incidunt?",
-                    date: "October 11th, 2022",
-                    comments: "Comments Off",
-                    featured: false
-                },
-                {
-                    image: "featured_article_1_bg.jpg",
-                    title: "Featured Article- Blah blah blah",
-                    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nam sapiente mollitia ut dignissimos dicta, earum saepe animi deleniti aspernatur incidunt ? Nulla nam sapiente mollitia ut dignissimos dicta.",
-                    date: "October 11th, 2022",
-                    comments: "Comments Off",
-                    featured: true
-                },
-
-            ]
+            store
         }
     }
 }
@@ -81,7 +25,7 @@ export default {
             </div>
             <!-- /latest_news_header -->
             <div class="row">
-                <div class="col all_articles" v-for="article in articlesList.slice(0, 3)"
+                <div class="col all_articles" v-for="article in store.articlesList.slice(0, 3)"
                     v-show="article.featured === false">
                     <img :src="`src/assets/img/${article.image}`" alt="">
                     <h3>{{ article.title }}</h3>
@@ -90,7 +34,7 @@ export default {
                 </div>
             </div>
             <!-- /first 3 articles -->
-            <div class="featured_article position-relative" v-for="article in articlesList">
+            <div class="featured_article position-relative" v-for="article in store.articlesList">
                 <img class="featured_image" v-show="article.featured === true" :src="`src/assets/img/${article.image}`"
                     alt="">
                 <div class="featured_info">
@@ -107,7 +51,7 @@ export default {
             </div>
             <!-- /featured article -->
             <div class="row">
-                <div class="col all_articles" v-for="article in articlesList.slice(3)"
+                <div class="col all_articles" v-for="article in store.articlesList.slice(3)"
                     v-show="article.featured === false">
                     <img :src="`src/assets/img/${article.image}`" alt="">
                     <h3>{{ article.title }}</h3>
