@@ -26,6 +26,7 @@ export default {
 .my_jumbotron {
     background-image: url("../assets/img/home_slider_bg.jpg");
     background-repeat: no-repeat;
+    background-position: center;
     height: 850px;
     color: white;
 
