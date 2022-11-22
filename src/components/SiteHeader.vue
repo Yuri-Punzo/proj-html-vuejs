@@ -85,6 +85,7 @@ export default {
 } */
 
 a {
+    font-size: 14px;
     text-decoration: none;
     color: white;
     margin: 0 16px;
@@ -125,7 +126,7 @@ a {
 .triangle {
     position: absolute;
     top: 80px;
-    right: 557px;
+    right: 833px;
     width: 0;
     height: 0;
     border-left: 8px solid transparent;

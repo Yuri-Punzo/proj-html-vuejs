@@ -63,7 +63,15 @@ export default {
             </h5>
         </div>
         <!-- /go to our forum -->
+        <section class="join_our_community text-center">
+
+        </section>
         <!-- /join our community -->
+        <section class="newsletter text-center">
+            <h4>
+                Subscribe to our Newsletter
+            </h4>
+        </section>
         <!-- /newsletter subscribe -->
 
     </div>
@@ -149,5 +157,22 @@ export default {
         margin-bottom: 0 !important;
     }
 
+}
+
+.join_our_community {
+    background-image: url(../assets/img/join_now_cta_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px;
+}
+
+.newsletter {
+    background-color: #f2f2f2;
+    height: 300px;
+
+    h4 {
+        font-size: 20px;
+        font-weight: bold;
+    }
 }
 </style>
