@@ -1,14 +1,16 @@
 <script>
+import SiteHeader from "./components/SiteHeader.vue"
+
 export default {
-  name: "App"
+  name: "App",
+  components: {
+    SiteHeader
+  }
 }
 </script>
 
 <template>
-  <div id="site_header">
-    <!-- navbar dinamica -->
-  </div>
-  <!-- /#site_header -->
+  <SiteHeader />
   <div id="site_main">
     <!-- forum section dinamico -->
 
