@@ -1,9 +1,12 @@
 <script>
 import LatestNews from "./LatestNews.vue"
+import TutorialsAndGuides from "./TutorialsAndGuides.vue"
+
 export default {
     name: "SiteMain",
     components: {
-        LatestNews
+        LatestNews,
+        TutorialsAndGuides
     }
 }
 </script>
@@ -128,7 +131,7 @@ export default {
 }
 
 .blog_and_forum {
-    background-color: black;
+    background-color: #191919;
     color: white;
     font-weight: bold;
 
@@ -137,6 +140,8 @@ export default {
     }
 
     h5 {
+        letter-spacing: 1px;
+        font-weight: bold;
         font-size: 12px;
         padding: 40px;
     }
