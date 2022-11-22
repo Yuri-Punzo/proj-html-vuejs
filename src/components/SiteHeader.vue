@@ -80,9 +80,9 @@ export default {
     justify-content: end;
 }
 
-.active {
-    /* come fare a mettere il triangolo su active ? */
-}
+/* .active {
+    come fare a mettere il triangolo su active ?
+} */
 
 a {
     text-decoration: none;

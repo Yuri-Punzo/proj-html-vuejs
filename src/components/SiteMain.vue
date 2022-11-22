@@ -31,7 +31,28 @@ export default {
             </div>
         </div>
         <!-- /info -->
-        <!-- forum section dinamico -->
+        <LatestNews />
+        <!-- /Latest News -->
+        <TutorialsAndGuides />
+        <!-- /Tutorials And Guides -->
+        <div class="blog_and_forum text-center">
+            <h5>
+                READ OUR BLOG
+                <font-awesome-icon class="ps-1" icon="fa-solid fa-arrow-right-long" />
+            </h5>
+        </div>
+        <!-- /read our blog -->
+        <ForumSections />
+        <!-- /Forum Sections -->
+        <div class="blog_and_forum text-center">
+            <h5>
+                GO TO OUR FORUM
+                <font-awesome-icon class="ps-1" icon="fa-solid fa-arrow-right-long" />
+            </h5>
+        </div>
+        <!-- /go to our forum -->
+        <!-- /join our community -->
+        <!-- /newsletter subscribe -->
 
     </div>
     <!-- /#site_main -->
@@ -97,5 +118,21 @@ export default {
         font-size: 18px;
         color: #898989;
     }
+}
+
+.blog_and_forum {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    h5 {
+        font-size: 12px;
+        padding: 40px;
+    }
+
 }
 </style>
