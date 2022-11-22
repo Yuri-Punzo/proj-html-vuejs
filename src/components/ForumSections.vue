@@ -72,9 +72,11 @@ export default {
         height: 285px;
         width: 285px;
         border-top: 3px solid #27afc3;
+        transition: 0.3s;
 
         &:hover {
             cursor: pointer;
+            box-shadow: 0 0 18px 3px gray;
         }
     }
 
