@@ -78,7 +78,9 @@ export default {
                         <font-awesome-icon class="my_icons my_insta" icon="fa-brands fa-instagram" />
                         <font-awesome-icon class="my_icons my_tube" icon="fa-brands fa-youtube" />
                         <div class="linguetta d-flex justify-content-center align-items-center">
-                            <font-awesome-icon icon="fa-solid fa-chevron-up" />
+                            <a href="#site_header">
+                                <font-awesome-icon icon="fa-solid fa-chevron-up" />
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -178,6 +180,15 @@ export default {
 
     .my_tube {
         background: #cd201f;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+
+        &:hover {
+            color: white;
+        }
     }
 
     .linguetta {
