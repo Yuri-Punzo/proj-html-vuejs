@@ -201,5 +201,7 @@ export const store = reactive({
             text: 'Amet consectetur adipisicing elit. Veritatis consequatur numquam, dolore excepturi fugiat quas ex culpa fugit!',
             href: '#'
         }
-    ]
+    ],
+    mailText: "",
+    newsletterSubscribers: []
 })

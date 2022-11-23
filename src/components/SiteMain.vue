@@ -2,16 +2,18 @@
 import LatestNews from "./LatestNews.vue"
 import TutorialsAndGuides from "./TutorialsAndGuides.vue"
 import ForumSections from "./ForumSections.vue"
+import NewsletterSub from "./NewsletterSub.vue"
 
 export default {
     name: "SiteMain",
     components: {
         LatestNews,
         TutorialsAndGuides,
-        ForumSections
+        ForumSections,
+        NewsletterSub
     },
     methods: {
-        my_function() {
+        myFunction() {
             this.$refs.audioElm.play();
         }
     }
@@ -24,7 +26,7 @@ export default {
             <div class="container">
                 <h1>Tech Forum!</h1>
                 <p>Discuss all the latest technology news and trends</p>
-                <span class="call_to_action" @click="my_function()">
+                <span class="call_to_action" @click="myFunction()">
                     GET AVADA NOW
                     <font-awesome-icon class="chevron_right" icon="fa-solid fa-chevron-right" />
                 </span>
@@ -85,17 +87,7 @@ export default {
             </div>
         </section>
         <!-- /join our community -->
-        <section class="newsletter text-center">
-            <h4>
-                Subscribe to our Newsletter
-            </h4>
-            <div class="my_form d-flex justify-content-center align-items-center">
-                <input placeholder="Insert your email*" type="email" id="email" name="email">
-                <span class="newsletter_sub">
-                    SEND
-                </span>
-            </div>
-        </section>
+        <NewsletterSub />
         <!-- /newsletter subscribe -->
     </div>
     <!-- /#site_main -->
@@ -229,46 +221,6 @@ export default {
 
         .chevron_right {
             font-size: 14px;
-        }
-    }
-}
-
-.newsletter {
-    background-color: #f2f2f2;
-
-    h4 {
-        padding-top: 60px;
-        font-size: 24px;
-    }
-
-    .my_form {
-        padding-top: 20px;
-        padding-bottom: 70px;
-    }
-
-    #email {
-        width: 360px;
-        color: black;
-        font-size: 12px;
-        padding: 8px;
-        border: 1px #e2e2e2;
-        margin-right: 24px;
-    }
-
-    .newsletter_sub {
-        padding: 6px 64px;
-        letter-spacing: 1px;
-        background-color: black;
-        color: white;
-        border-radius: 2px;
-        font-weight: bold;
-        transition: 0.3s;
-
-        &:hover {
-            cursor: pointer;
-            background-color: white;
-            color: black;
-            box-shadow: 0 0 0 3px white, inset 0 0 0 2px black;
         }
     }
 }
