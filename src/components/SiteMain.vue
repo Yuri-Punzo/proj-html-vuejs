@@ -30,7 +30,7 @@ export default {
                     GET AVADA NOW
                     <font-awesome-icon class="chevron_right" icon="fa-solid fa-chevron-right" />
                 </span>
-                <audio ref="audioElm" src="../../Voldemort - Avada Kedavra!.mp3"></audio>
+                <audio ref="audioElm" src="../../Get Avada !.mp3"></audio>
             </div>
         </div>
         <!-- /jumbotron -->
