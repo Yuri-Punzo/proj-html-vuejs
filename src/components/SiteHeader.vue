@@ -1,34 +1,11 @@
 <script>
+import { store } from "../store"
+
 export default {
     name: "SiteHeader",
     data() {
         return {
-            navbarMenu: [
-                {
-                    text: 'Home',
-                    href: '#'
-                },
-                {
-                    text: 'Apple',
-                    href: '#'
-                },
-                {
-                    text: 'Microsoft',
-                    href: '#'
-                },
-                {
-                    text: 'Android',
-                    href: '#'
-                },
-                {
-                    text: 'Forums',
-                    href: '#'
-                },
-                {
-                    text: 'Contact us',
-                    href: '#'
-                }
-            ]
+            store
         }
     }
 }
@@ -45,7 +22,8 @@ export default {
                 </div>
                 <div class="col">
                     <nav class="my_navbar">
-                        <a :href="item.href" v-for="item in navbarMenu" :class="item.text === 'Home' ? 'active' : ''">
+                        <a :href="item.href" v-for="item in store.navbarMenu"
+                            :class="item.text === 'Home' ? 'active' : ''">
                             {{ item.text }}
                         </a>
                         <span class="join_us">JOIN US</span>
