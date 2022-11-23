@@ -22,20 +22,19 @@ export default {
                 </div>
                 <div class="col my_col">
                     <nav class="my_navbar">
-                        <a :href="item.href" v-for="item in store.navbarMenu"
-                            :class="item.text === 'Home' ? 'active' : ''">
+                        <a class="position-relative" :href="item.href" v-for="item in store.navbarMenu">
                             {{ item.text }}
+                            <!-- <div :class="item.text === 'Home' ? 'triangle' : ''"></div> -->
                         </a>
                         <span class="join_us">JOIN US</span>
                         <font-awesome-icon class="search_icon" icon="fa-solid fa-magnifying-glass" />
-                        <div class="triangle"></div>
+                        <!-- <div class="triangle"></div> -->
                     </nav>
                 </div>
             </div>
         </div>
     </div>
     <!-- /#site_header -->
-
 </template>
 
 <style lang="scss" scoped>
@@ -103,12 +102,12 @@ a {
 
 .triangle {
     position: absolute;
-    top: 80px;
-    right: 872px;
+    top: 0;
+    right: 0;
     width: 0;
     height: 0;
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
-    border-top: 8px solid #26a9bd;
+    border-top: 8px solid #000000;
 }
 </style>

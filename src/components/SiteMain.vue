@@ -9,6 +9,11 @@ export default {
         LatestNews,
         TutorialsAndGuides,
         ForumSections
+    },
+    methods: {
+        my_function() {
+            this.$refs.audioElm.play();
+        }
     }
 }
 </script>
@@ -19,10 +24,11 @@ export default {
             <div class="container">
                 <h1>Tech Forum!</h1>
                 <p>Discuss all the latest technology news and trends</p>
-                <span class="call_to_action">
+                <span class="call_to_action" @click="my_function()">
                     GET AVADA NOW
                     <font-awesome-icon class="chevron_right" icon="fa-solid fa-chevron-right" />
                 </span>
+                <audio ref="audioElm" src="../../Voldemort - Avada Kedavra!.mp3"></audio>
             </div>
         </div>
         <!-- /jumbotron -->
@@ -104,12 +110,12 @@ export default {
     color: white;
 
     h1 {
-        font-size: 88px;
+        font-size: 140px;
         font-weight: bold;
     }
 
     p {
-        font-size: 15;
+        font-size: 24px;
     }
 
     .call_to_action {
@@ -162,9 +168,12 @@ export default {
     background-color: #191919;
     color: white;
     font-weight: bold;
+    transition: 0.3s;
 
     &:hover {
         cursor: pointer;
+        background-color: #ff8d61;
+        color: black;
     }
 
     h5 {

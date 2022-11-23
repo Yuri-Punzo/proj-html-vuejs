@@ -52,10 +52,6 @@ export default {
                                     <p>{{ article.date }} | {{ article.comments }}</p>
                                 </div>
                             </div>
-                            <!-- <div v-show="article.tutorial_guide === true">
-
-
-                            </div> -->
                         </div>
                     </div>
                 </div>
