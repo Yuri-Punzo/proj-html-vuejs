@@ -125,5 +125,31 @@ export const store = reactive({
             icon_path: "fa-solid fa-wrench"
         },
 
+    ],
+    navbarMenu: [
+        {
+            text: 'Home',
+            href: '#'
+        },
+        {
+            text: 'Apple',
+            href: '#'
+        },
+        {
+            text: 'Microsoft',
+            href: '#'
+        },
+        {
+            text: 'Android',
+            href: '#'
+        },
+        {
+            text: 'Forums',
+            href: '#'
+        },
+        {
+            text: 'Contact us',
+            href: '#'
+        }
     ]
 })
