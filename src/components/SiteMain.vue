@@ -97,7 +97,7 @@ export default {
 
 <style lang="scss" scoped>
 .my_jumbotron {
-    background-image: url("../../public/img/home_slider_bg.jpg");
+    background-image: url("../../img/home_slider_bg.jpg");
     background-repeat: no-repeat;
     background-position: center;
     height: 850px;
@@ -178,7 +178,7 @@ export default {
 }
 
 .join_our_community {
-    background-image: url(../../public/img/join_now_cta_bg.jpg);
+    background-image: url(../../img/join_now_cta_bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     height: 600px;

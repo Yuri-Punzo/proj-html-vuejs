@@ -17,7 +17,7 @@ export default {
             <div class="row">
                 <div class="col-auto">
                     <div class="logo">
-                        <img src="../../public/img/logo.png" alt="">
+                        <img src="../../img/logo.png" alt="">
                     </div>
                 </div>
                 <div class="col my_col">
