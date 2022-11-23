@@ -26,6 +26,7 @@ export default {
                             voluptas inventore eaque iusto ea veritatis eos, voluptatibus nostrum a quibusdam. Quae!
                         </p>
                     </div>
+                    <!-- /AVADA TECH FORUM -->
                     <div class="col">
                         <h4>
                             POPULAR TOPICS
@@ -37,6 +38,7 @@ export default {
                             </a>
                         </div>
                     </div>
+                    <!-- /POPULAR TOPICS -->
                     <div class="col">
                         <h4>
                             RECENT TOPICS
@@ -48,6 +50,7 @@ export default {
                             </a>
                         </div>
                     </div>
+                    <!-- /RECENT TOPICS -->
                     <div class="col">
                         <h4>
                             LATEST REPLIES
@@ -59,9 +62,11 @@ export default {
                             </a>
                         </div>
                     </div>
+                    <!-- /LATEST REPLIES -->
                 </div>
             </div>
         </section>
+        <!-- /upper_footer -->
         <section class="bottom_footer position-relative">
             <div class="container">
                 <div class="row">
@@ -86,6 +91,7 @@ export default {
                 </div>
             </div>
         </section>
+        <!-- /bottom_footer -->
     </div>
     <!-- /#site_footer -->
 </template>
@@ -136,7 +142,6 @@ export default {
         justify-content: start;
         color: #808080;
         font-size: 16px;
-        /* padding: 32px; */
     }
 
     .color_black {

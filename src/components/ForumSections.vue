@@ -22,7 +22,7 @@ export default {
             </h3>
             <div class="orange_br"></div>
         </div>
-        <!-- /latest_news_header -->
+        <!-- /forum_section_header -->
         <div class="container">
             <div class="my_row d-flex flex-wrap justify-content-between">
                 <div class="my_col pb-5 text-center" v-for="section in store.forumSections">
