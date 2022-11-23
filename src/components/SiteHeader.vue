@@ -22,13 +22,12 @@ export default {
                 </div>
                 <div class="col my_col">
                     <nav class="my_navbar">
-                        <a class="position-relative" :href="item.href" v-for="item in store.navbarMenu">
+                        <a class="position-relative" :href="item.href" v-for="item,i in store.navbarMenu">
                             {{ item.text }}
-                            <!-- <div :class="item.text === 'Home' ? 'triangle' : ''"></div> -->
+                            <span :class="item.text === 'Home' ? 'triangle' : ''"></span>
                         </a>
                         <span class="join_us">JOIN US</span>
                         <font-awesome-icon class="search_icon" icon="fa-solid fa-magnifying-glass" />
-                        <!-- <div class="triangle"></div> -->
                     </nav>
                 </div>
             </div>
@@ -56,10 +55,6 @@ export default {
     align-items: center;
     justify-content: end;
 }
-
-/* .active {
-    come fare a mettere il triangolo su active ?
-} */
 
 a {
     font-size: 14px;
@@ -102,12 +97,12 @@ a {
 
 .triangle {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 48px;
+    right: 14px;
     width: 0;
     height: 0;
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
-    border-top: 8px solid #000000;
+    border-top: 8px solid #26a9bd;
 }
 </style>
