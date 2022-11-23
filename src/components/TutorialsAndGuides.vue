@@ -154,11 +154,19 @@ export default {
 
                 img {
                     padding-bottom: 42px;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
                 }
 
                 h3 {
                     font-size: 21px;
                     font-weight: bold;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
                 }
 
                 p {

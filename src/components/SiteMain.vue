@@ -63,7 +63,20 @@ export default {
             </h5>
         </div>
         <!-- /go to our forum -->
-        <section class="join_our_community text-center">
+        <section class="join_our_community">
+            <div class="my_container text-center">
+                <h2>
+                    Hey! Join to our Community
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit aliquid porro nam odit iusto ut
+                    fugiat, corrupti nulla id ab delectus.
+                </p>
+                <span class="cta_community">
+                    SIGN UP
+                    <font-awesome-icon class="chevron_right" icon="fa-solid fa-chevron-right" />
+                </span>
+            </div>
 
         </section>
         <!-- /join our community -->
@@ -73,7 +86,6 @@ export default {
             </h4>
         </section>
         <!-- /newsletter subscribe -->
-
     </div>
     <!-- /#site_main -->
 </template>
@@ -104,6 +116,7 @@ export default {
         padding: 8px 12px;
         transition: 0.3s;
         margin-top: 1rem;
+        letter-spacing: 1px;
 
         &:hover {
             cursor: pointer;
@@ -164,6 +177,46 @@ export default {
     background-repeat: no-repeat;
     background-position: center;
     height: 600px;
+    color: white;
+
+    .my_container {
+        margin: auto;
+        width: 30%;
+    }
+
+    h2 {
+        font-weight: bold;
+        font-size: 56px;
+        padding-top: 150px;
+    }
+
+    p {
+        font-size: 16px;
+        padding-top: 20px;
+    }
+
+    .cta_community {
+        display: inline-block;
+        border-radius: 2px;
+        font-size: 12;
+        font-weight: bold;
+        background-color: #26a9bd;
+        padding: 8px 30px;
+        transition: 0.3s;
+        margin-top: 1rem;
+        letter-spacing: 1px;
+
+        &:hover {
+            cursor: pointer;
+            background-color: white;
+            color: #26a9bd;
+            box-shadow: 0 0 0 3px white, inset 0 0 0 2px #26a9bd;
+        }
+
+        .chevron_right {
+            font-size: 14px;
+        }
+    }
 }
 
 .newsletter {

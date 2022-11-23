@@ -99,10 +99,18 @@ export default {
         font-weight: bold;
         font-size: 18px;
         margin-top: 16px;
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 
     img {
         max-width: 100%;
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 
     p {
