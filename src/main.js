@@ -33,24 +33,3 @@ library.add(faMagnifyingGlass, faFileLines, faApple, faWindows, faAndroid, faMug
 
 /* add font awesome component */
 createApp(App).component('font-awesome-icon', FontAwesomeIcon).mount('#app')
-
-/*
-    ICONS
-<font-awesome-icon icon="fa-solid fa-magnifying-glass" />
-<font-awesome-icon icon="fa-solid fa-file-lines" />
-<font-awesome-icon icon="fa-brands fa-apple" />
-<font-awesome-icon icon="fa-brands fa-windows" />
-<font-awesome-icon icon="fa-brands fa-android" />
-<font-awesome-icon icon="fa-solid fa-mug-saucer" />
-<font-awesome-icon icon="fa-solid fa-cubes" />
-<font-awesome-icon icon="fa-solid fa-laptop" />
-<font-awesome-icon icon="fa-solid fa-wrench" />
-<font-awesome-icon icon="fa-solid fa-chevron-right" />
-<font-awesome-icon icon="fa-solid fa-arrow-right-long" />
-<font-awesome-icon icon="fa-regular fa-copyright" />
-<font-awesome-icon icon="fa-brands fa-facebook-f" />
-<font-awesome-icon icon="fa-brands fa-twitter" />
-<font-awesome-icon icon="fa-brands fa-instagram" />
-<font-awesome-icon icon="fa-brands fa-youtube" />
-<font-awesome-icon icon="fa-solid fa-chevron-up" />
-*/

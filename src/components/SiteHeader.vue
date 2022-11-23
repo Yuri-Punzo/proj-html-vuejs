@@ -20,7 +20,7 @@ export default {
                         <img src="../assets/img/logo.png" alt="">
                     </div>
                 </div>
-                <div class="col">
+                <div class="col my_col">
                     <nav class="my_navbar">
                         <a :href="item.href" v-for="item in store.navbarMenu"
                             :class="item.text === 'Home' ? 'active' : ''">
@@ -52,7 +52,7 @@ export default {
     }
 }
 
-.col {
+.my_col {
     display: flex;
     align-items: center;
     justify-content: end;

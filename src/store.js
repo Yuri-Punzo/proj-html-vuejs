@@ -151,5 +151,55 @@ export const store = reactive({
             text: 'Contact us',
             href: '#'
         }
+    ],
+    footerLInks: [
+        {
+            text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos porro veniam soluta!',
+            href: '#'
+        },
+        {
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis consequatur numquam, dolore excepturi fugiat quas ex culpa fugit!',
+            href: '#'
+        },
+        {
+            text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos porro veniam soluta!',
+            href: '#'
+        },
+        {
+            text: 'Lorem ipsum dolor sit amet.',
+            href: '#'
+        },
+        {
+            text: 'Amet consectetur adipisicing elit. Veritatis consequatur numquam, dolore excepturi fugiat quas ex culpa fugit!',
+            href: '#'
+        },
+        {
+            text: 'Dolor sit amet consectetur adipisicing elit. Veritatis consequatur numquam, dolore excepturi fugiat quas ex culpa fugit!',
+            href: '#'
+        },
+        {
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste nisi ad in temporibus.',
+            href: '#'
+        },
+        {
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. A facilis minus nihil nulla, dolorem suscipit enim expedita obcaecati rem doloribus quos.',
+            href: '#'
+        },
+        {
+            text: 'Dolor sit amet consectetur adipisicing elit. Veritatis consequatur numquam, dolore excepturi fugiat quas ex culpa fugit!',
+            href: '#'
+        },
+        {
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste nisi ad in temporibus.',
+            href: '#'
+        },
+        {
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. A facilis minus nihil nulla, dolorem suscipit enim expedita obcaecati rem doloribus quos.',
+            href: '#'
+        },
+        {
+            text: 'Amet consectetur adipisicing elit. Veritatis consequatur numquam, dolore excepturi fugiat quas ex culpa fugit!',
+            href: '#'
+        }
     ]
 })

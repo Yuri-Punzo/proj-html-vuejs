@@ -1,12 +1,14 @@
 <script>
 import SiteHeader from "./components/SiteHeader.vue"
 import SiteMain from "./components/SiteMain.vue"
+import SiteFooter from "./components/SiteFooter.vue"
 
 export default {
   name: "App",
   components: {
     SiteHeader,
-    SiteMain
+    SiteMain,
+    SiteFooter
   }
 }
 </script>
@@ -14,11 +16,7 @@ export default {
 <template>
   <SiteHeader />
   <SiteMain />
-
-  <div id="site_footer">
-    <!-- site footer dinamico -->
-  </div>
-  <!-- /#site_footer -->
+  <SiteFooter />
 </template>
 
 <style lang="scss" scoped>
