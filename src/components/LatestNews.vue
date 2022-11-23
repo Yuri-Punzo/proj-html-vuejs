@@ -26,7 +26,7 @@ export default {
         <div class="row">
             <div class="col all_articles" v-for="article in store.articlesList.slice(0, 3)">
                 <div v-show="article.featured === false">
-                    <img :src="`src/assets/img/${article.image}`" alt="">
+                    <img :src="article.image" alt="">
                     <h3>{{ article.title }}</h3>
                     <p>{{ article.date }} | {{ article.comments }}</p>
                     <p>{{ article.text }}</p>
@@ -36,7 +36,7 @@ export default {
         <!-- /first 3 articles -->
         <div class="featured_article position-relative" v-for="article in store.articlesList">
             <div v-show="article.featured === true">
-                <img class="featured_image" :src="`src/assets/img/${article.image}`" alt="">
+                <img class="featured_image" :src="article.image" alt="">
                 <div class="featured_info">
                     <div class="my_container">
                         <h5>FEATURED ARTICLE</h5>
@@ -55,7 +55,7 @@ export default {
         <div class="row">
             <div class="col all_articles" v-for="article in store.articlesList.slice(3, 6)">
                 <div v-show="article.featured === false">
-                    <img :src="`src/assets/img/${article.image}`" alt="">
+                    <img :src="article.image" alt="">
                     <h3>{{ article.title }}</h3>
                     <p>{{ article.date }} | {{ article.comments }}</p>
                     <p>{{ article.text }}</p>

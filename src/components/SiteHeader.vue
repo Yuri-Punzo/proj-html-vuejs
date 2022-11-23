@@ -17,7 +17,7 @@ export default {
             <div class="row">
                 <div class="col-auto">
                     <div class="logo">
-                        <img src="../assets/img/logo.png" alt="">
+                        <img src="../../public/img/logo.png" alt="">
                     </div>
                 </div>
                 <div class="col my_col">
@@ -104,7 +104,7 @@ a {
 .triangle {
     position: absolute;
     top: 80px;
-    right: 833px;
+    right: 872px;
     width: 0;
     height: 0;
     border-left: 8px solid transparent;

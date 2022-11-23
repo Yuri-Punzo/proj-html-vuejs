@@ -17,7 +17,7 @@ export default {
             <div class="col-8">
                 <div class="product_review position-relative" v-for="article in store.articlesList">
                     <div v-show="article.reviewed_product === true">
-                        <img class="product_image" :src="`src/assets/img/${article.image}`" alt="">
+                        <img class="product_image" :src="article.image" alt="">
                         <div class="product_info">
                             <div class="my_container">
                                 <h5>REVIEWED PRODUCT</h5>
@@ -45,7 +45,7 @@ export default {
                         <div class="all_tutorials" v-for="article in store.articlesList">
                             <div class="my_row" v-show="article.tutorial_guide === true">
                                 <div class="my_col">
-                                    <img :src="`src/assets/img/${article.image_small}`" alt="">
+                                    <img :src="article.image_small" alt="">
                                 </div>
                                 <div class="my_col">
                                     <h3>{{ article.title }}</h3>
